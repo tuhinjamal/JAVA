@@ -1,0 +1,98 @@
+[
+    {
+        "title": "1.DOCTYPE html",
+        "description": "this is not a tag it is an information to the browser about what document type to expect"
+    },
+    {
+        "title": "2.html:",
+        "description": " this tag represents the root of html document and container for all other element expcept !DOCTYPE"
+    },
+    {
+        "title": "3.head",
+        "description": "this is a container for metadata (data about data ). Metadata is data aboout the html document and never displayed its typically define the document title, charecter set, styles,scripts and other meta information"
+    },
+    {
+        "title": "4.title",
+        "description": "defines the title of the document"
+    },
+    {
+        "title": "5.style",
+        "description": "defines style information (CSS) for document"
+    },
+    {
+        "title": "6.base",
+        "description": "specifies the base url/target"
+    },
+    {
+        "title": "7.link",
+        "description": "defines the relationship between the current document and an external resource it is most often used to link to external style sheets or to add a favicon to a website"
+    },
+    {
+        "title": "8.meta",
+        "description": "defines metadata about an html document which go inside tha heal element, and are typically used to specify charecter set, page description, keywords, author of document, and viewport. it used in browsers (how to display content or reload page), search engines (keywords), and other web services. there is a method let web designers take control over the viewport (the user's visible area of a webpage ), through the meta tag"
+    },
+    {
+        "title": "9.script",
+        "description": "used to embed a client side script (javascript) the element either contains scripting statements, or it points to an external script file through the src attribut."
+    },
+    {
+        "title": "10.noscript",
+        "description": "defines an alternate content to be displayed to user that have displayed scripts in their browser or have a browser that doesn't support script"
+    },
+    {
+        "title": "11.body",
+        "description": "defines the document's body and contains all the contents of an html document"
+    },
+    {
+        "title": "12.a",
+        "description": "defines a hyperling, which is used to link from one page to another"
+    },
+    {
+        "title": "13.p",
+        "description": "defines a pragraph add a single blank line before and after each"
+    },
+    {
+        "title": "14.q",
+        "description": "defines short quation with quation mark"
+    },
+    {
+        "title": "15.s",
+        "description": "specifies text that is no longer correct"
+    },
+    {
+        "title": "16.span",
+        "description": "an inline container used to mark up a part of a text, or a part of document"
+    },
+    {
+        "title": "18.template",
+        "description": "used as a container to hold some html content hidden from the user when the page loads an its content can be rendered later with a javascript"
+    },
+    {
+        "title": "19.var",
+        "description": "used to defines a variable in programming or in a mathematical expression.the content inside is typically displayed in italic"
+    },
+    {
+        "title": "20.time",
+        "description": "defines a specific time(or datetime). this element is used translate the time into a machine-readable format so the user's calendar, and search engines can produce smarter search results"
+    },
+    {
+        "title": "21.strong",
+        "description": "defines important text"
+    },
+    {
+        "title": "22.select",
+        "description": "is used to create drop-down list. this is most often used in a form, to collect user input"
+    },
+    {
+        "title": "23.sub",
+        "description": "defines subscript text like H<sub>2</sub>O"
+    },
+    {
+        "title": "24.sup",
+        "description": "defines superscripted text like A <sup>2</sup>"
+    },
+    {
+        "title": "25.u",
+        "description": "defines some text that is unarticulated and styled differently from normal text, such as mispelled words or proper names in Chinese text"
+    }
+]
