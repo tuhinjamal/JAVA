@@ -1,0 +1,352 @@
+:root {
+  --min: 30ch;
+  --color: #054c73;
+  --font: Montserrat;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100dvh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-gap: 3px;
+  grid-auto-flow: dense;
+  list-style-type: none;
+}
+.nav-list-item {
+  grid-column: span 1;
+  color: #333333;
+  font-family: var(--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.brand {
+  color: var(--color);
+  font-family: var(--font);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.carousel {
+  width: 100%;
+  height: 100dvh;
+  background: url("./images/carousel.png");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+  text-align: center;
+  padding: 10%;
+}
+.carousel-section:nth-child(2) {
+  background-color: #dfe9f4;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  text-align: start;
+  padding: 5%;
+}
+
+.carousel-card-sub-title {
+  color: var(--Font-Color, #333);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+.carousel-card-title {
+  color: var(--color, #054c73);
+  font-family: Montserrat;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  margin: 0;
+  padding: 0;
+}
+.carousel-card-description {
+  color: var(--Font-Color, #333);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 39px;
+  margin: 0;
+  padding: 0;
+}
+
+.buy-btn {
+  border-radius: 50px;
+  background: var(--Primary-color, #054c73);
+  color: white;
+  display: inline-flex;
+  padding: 15px 72px;
+}
+
+.service-section {
+  background: #f2f5ff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.services {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  /* gap: 1rem; */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+  align-items: center;
+  justify-content: space-between;
+}
+.service-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-img {
+  width: 50px;
+  height: 50px;
+}
+.service-text-section {
+  margin-left: 10px;
+  /* margin-top: 5px; */
+}
+.service-text {
+  margin: 0;
+  padding: 0;
+}
+.collection-section {
+  text-align: center;
+}
+.inspiarational-collection {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.inspiaration-title {
+  font-family: var(--font);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+}
+.inspiaration-text {
+  font-family: var(--font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.beauty {
+  margin-top: 5%;
+  background: #f2f5ff;
+}
+.beauty-section {
+  max-width: 100%;
+  display: grid;
+  /* gap: 1rem; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  text-align: center;
+}
+.beauty-image-section {
+  padding: 15% 0 15% 0;
+}
+
+.beauty-image {
+  width: 80%;
+  height: 700px;
+}
+
+.beauty-card-section {
+  transform: translateY(50%);
+  text-align: start;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.beauty-card-title {
+  font-family: var(--font);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.beauty-card-text {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.custom-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
+}
+.custom-img {
+  height: 100px;
+  width: 200px;
+}
+.custom-btn {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  top: 420px;
+  border: 5px solid white;
+}
+.custom-text-area {
+  position: relative;
+  top: 350px;
+  text-align: center;
+}
+.custom-title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+}
+.mail-section {
+  text-align: center;
+  position: relative;
+  top: 400px;
+  background: #F2F5FF;
+  padding: 20px;
+
+}
+.mail-title {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.mail-input{
+  margin: 0;
+  padding: 0;
+}
+.submit{
+  background-color: #011C42;
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 20px;
+  
+}
+.mail-input{
+  border: #FFFFFF;
+  padding: 20px;
+}
+.footer-section {
+  
+  position: relative;
+  top: 400px;
+  background: #03344F;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  grid-gap: 10px;
+  background-color: #03344F;
+  padding: 10px;
+ 
+
+}
+.footer-left{
+  padding: 20px;
+  
+}
+.footer-right{
+  
+
+  text-align: center;
+
+}
+.footer-title{
+  color: white;
+  font-family: Montserrat;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+.footer-text{
+  color: white;
+}
+.footer-link{
+  color:white;
+}
+.footer-img{
+  position: relative;
+  top: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
