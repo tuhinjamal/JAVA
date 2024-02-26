@@ -220,19 +220,24 @@ body {
   padding: 0;
 }
 
-
-
 .custom-cards {
-  max-width: 1200px;
-  margin: 0 auto;
+
   display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2%;
+  /* grid-template-columns: 33.33% 33.33% 33.33%; */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  margin: 2%;
+  text-align: center;
+}
+.custom-card{
+  position: relative;
+  
   text-align: center;
 }
 .custom-img {
-  height: 100px;
-  width: 200px;
+  position: absolute;
+  min-height: 300px;
+  min-width: 100%;
 }
 .custom-btn {
   background-color: black;
@@ -241,15 +246,16 @@ body {
   height: 60px;
   width: 60px;
   position: relative;
-  top: 420px;
+  top: -35px;
   border: 5px solid white;
 }
 .custom-text-area {
   position: relative;
-  top: 350px;
-  text-align: center;
+  top: 400px;
+ justify-self: center;
 }
 .custom-title {
+  
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 700;
@@ -259,10 +265,9 @@ body {
 .mail-section {
   text-align: center;
   position: relative;
-  top: 400px;
-  background: #F2F5FF;
+  top:380px;
+  background: #f2f5ff;
   padding: 20px;
-
 }
 .mail-title {
   font-family: Montserrat;
@@ -273,33 +278,81 @@ body {
   text-align: center;
 }
 
-.mail-input{
+.mail-input {
   margin: 0;
   padding: 0;
 }
-.submit{
-  background-color: #011C42;
+.submit {
+  background-color: #011c42;
   color: white;
   margin: 0;
   padding: 0;
   border: 0;
   padding: 20px;
-  
 }
-.mail-input{
-  border: #FFFFFF;
+.mail-input {
+  border: #ffffff;
   padding: 20px;
 }
-
-
-
 .footer {
   position: relative;
-  top: 400px;
+  top: 385px;
   max-width: 100%;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  background-color: #03344F;
+  /* grid-template-columns: 30% 70%;
+   */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 48%));
+
+  background-color: #03344f;
+}
+.footer-left {
+  color: white;
+  padding: 10%;
+}
+/* footer-left-title */
+.footer-left-title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left-detail {
+  margin-top: 2%;
+  margin-bottom: 7%;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.footer-right {
+  color: white;
+}
+.insta-shop {
+  padding: 0;
+  margin-top: 10%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  
+  letter-spacing: 0px;
+  text-align: left;
+}
+.footer-image{
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% ;
+  gap: 2%;
+  text-align: start;
 }
