@@ -21,6 +21,7 @@ body {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 9999;
 }
 .nav-list {
   display: grid;
@@ -41,82 +42,461 @@ body {
 
 .carousel {
   position: relative;
+  height: 100dvh;
 }
 .carousel-image {
   position: absolute;
-  top: 0;
+  width: 100%;
+  height: 100dvh;
 }
-.carousel-description {
-  /* background-color: red; */
+.carousel-card-area {
   position: relative;
-  top: 0;
   display: grid;
-  grid-template-columns: 100%;
-  /* grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr)); */
-}
-.carousel-card-section {
-  position: relative;
-  top: 250px;
-  padding-left: 50%;
-  padding-right: 5%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .carousel-card {
-  background-color: #dfe9f4;
-  display: grid;
+  display: flex;
   align-items: center;
-  justify-content: start;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  text-align: start;
-  padding: 5%;
+  height: 100dvh;
 }
-
-.carousel-card-sub-title {
-  color: var(--Font-Color, #333);
+.card-area {
+  width: 90%;
+  padding: 5%;
+  background-color: #dfe9f4;
+  border-radius: 15px;
+}
+.arrival {
   font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  letter-spacing: 3px;
+  text-align: left;
   margin: 0;
   padding: 0;
 }
-.carousel-card-title {
-  color: var(--color, #054c73);
+.collection {
   font-family: Montserrat;
   font-size: 52px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 65px;
   margin: 0;
   padding: 0;
-}
-.carousel-card-description {
-  color: var(--Font-Color, #333);
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 39px;
-  margin: 0;
-  padding: 0;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #054c73;
 }
 
 .buy-btn {
-  border-radius: 50px;
   border-color: transparent;
+  border-radius: 50px;
   background: var(--Primary-color, #054c73);
   color: white;
   display: inline-flex;
   padding: 15px 72px;
-  width: 50%;
+}
+.service-area {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: #f2f5ff;
+}
+.service {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+.service-text-section {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+.service-text {
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
 }
 
-@media screen and (max-width: 425px){
-.carousel-card-section {
+.inspiration-collection {
   position: relative;
-  top: 250px;
-  padding-left: 0%;
-  padding-right: 5%;
+  text-align: center;
 }
+.inpiration-text {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.inspiration-sub-text {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #666666;
+}
+.inpiration-images {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.left-inpiration-image {
+  margin-top: 10%;
+}
+.right-inpiration-image {
+  margin-top: 10%;
+}
+.inspiration-img {
+  text-align: center;
+}
+.inspiration-media {
+  /* height: 400px; */
+  width: 600px;
+}
+.beautify {
+  position: relative;
+  background-color: #f2f5ff;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 50%));
+}
+.beautify-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beautify-title {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.beautify-image {
+  position: relative;
+}
+.beauty-image {
+  position: relative;
+  z-index: 99999;
+  /* top: 5%; */
+}
+.disk {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.custom {
+  position: relative;
+}
+.custom-btn {
+  background-color: black;
+  color: white;
+
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  top: -35px;
+  border: 5px solid white;
+  z-index: 99999;
+}
+.custom-text {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.mail-section {
+  position: relative;
+  text-align: center;
+  background-color: #f2f5ff;
+  padding: 2%;
+}
+.mail-title {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.mail-input {
+  margin: 0;
+  padding: 0;
+}
+.submit {
+  background-color: #011c42;
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 20px;
+}
+.mail-input {
+  border: #ffffff;
+  padding: 20px;
+}
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 40%));
+  background-color: #03344f;
+  color: white;
+  text-align: start;
+}
+.footer-left {
+  padding: 20px;
+}
+.footer-left-title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left-detail {
+  margin-top: 2%;
+  margin-bottom: 7%;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.footer-image {
+  display: flex;
+  justify-content: space-between;
+}
+.insta-shop {
+  padding: 0;
+  margin-top: 8%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+
+  letter-spacing: 0px;
+  text-align: left;
+}
+/* media query mobile screen */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .carousel-card {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 100dvh;
+  }
+  .card-area {
+    width: 100%;
+    padding: 5%;
+    background-color: #dfe9f4;
+    border-radius: 15px;
+  }
+  .arrival {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .collection {
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    /* line-height: 65px; */
+    letter-spacing: 0px;
+    text-align: left;
+    color: #054c73;
+  }
+
+  .buy-btn {
+    border-color: transparent;
+    border-radius: 50px;
+    background: var(--Primary-color, #054c73);
+    color: white;
+    display: inline-flex;
+    padding: 15px 72px;
+  }
+  .inspiration-media {
+    height: 100px;
+    width: 100px;
+  }
+  .beautify-image {
+    text-align: center;
+  }
+  .beauty-image {
+    height: 300px;
+    width: 200px;
+  }
+  .disk {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    height: 150px;
+    width: 150px;
+  }
+  .custom-btn {
+    background-color: black;
+    color: white;
+
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: -25px;
+    border: 5px solid white;
+    z-index: 99999;
+  }
+  .beautify-text {
+    margin-bottom: 20px;
+  }
+  .insta-shop {
+    margin-left: 2%;
+  }
+
+  .footer-image {
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 5%;
+  }
+  .footer-img {
+    height: 80px;
+    width: 80px;
+  }
+}
+/* media query tablet screen */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .arrival {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .collection {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    /* line-height: 65px; */
+    letter-spacing: 0px;
+    text-align: left;
+    color: #054c73;
+  }
+
+  .buy-btn {
+    border-color: transparent;
+    border-radius: 50px;
+    background: var(--Primary-color, #054c73);
+    color: white;
+    display: inline-flex;
+    padding: 15px 72px;
+  }
+  .inspiration-media {
+    height: 400px;
+    width: 250px;
+  }
+  .beauty-image {
+    height: 300px;
+    width: 200px;
+  }
+  .disk {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 150px;
+    width: 150px;
+  }
+  .footer-image {
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 5%;
+  }
+  .footer-img {
+    height: 85px;
+    width: 85px;
+  }
+}
+/* media query for medium size laptop screen */
+@media only screen and ((min-width: 1050px) and (max-width: 1440px)) {
+  .inspiration-media {
+    /* height: 400px; */
+    width: 420px;
+  }
+  .beauty-image {
+    height: 400px;
+    width: 300px;
+  }
+  .disk {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 200px;
+    width: 200px;
+  }
+  .footer-image {
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 5%;
+  }
+  .footer-img {
+    height: 120px;
+    width: 120px;
+  }
+}
+/* media query for small size laptop screen */
+@media only screen and ((min-width: 770px) and (max-width: 1024px)) {
+  .inspiration-media {
+    /* height: 400px; */
+    width: 320px;
+  }
+  .beauty-image {
+    height: 300px;
+    width: 250px;
+  }
+  .disk {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 150px;
+    width: 150px;
+  }
+  .footer-image {
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 5%;
+  }
+  .footer-img {
+    height: 100px;
+    width: 100px;
+  }
 }

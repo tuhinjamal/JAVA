@@ -221,7 +221,6 @@ body {
 }
 
 .custom-cards {
-
   display: grid;
   gap: 2%;
   /* grid-template-columns: 33.33% 33.33% 33.33%; */
@@ -229,9 +228,9 @@ body {
   margin: 2%;
   text-align: center;
 }
-.custom-card{
+.custom-card {
   position: relative;
-  
+
   text-align: center;
 }
 .custom-img {
@@ -252,10 +251,9 @@ body {
 .custom-text-area {
   position: relative;
   top: 400px;
- justify-self: center;
+  justify-self: center;
 }
 .custom-title {
-  
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 700;
@@ -265,7 +263,7 @@ body {
 .mail-section {
   text-align: center;
   position: relative;
-  top:380px;
+  top: 380px;
   background: #f2f5ff;
   padding: 20px;
 }
@@ -345,14 +343,14 @@ body {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 700;
-  
+
   letter-spacing: 0px;
   text-align: left;
 }
-.footer-image{
+.footer-image {
   margin-top: 2%;
   display: grid;
-  grid-template-columns: 15% 15% 15% 15% ;
+  grid-template-columns: 15% 15% 15% 15%;
   gap: 2%;
   text-align: start;
 }
